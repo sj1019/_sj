@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* CSS 公用样式*/
+*{ margin:0; padding:0;}
+li{list-style: none}
+a{ text-decoration: none; color: #ffffff}
+.clearfix:after{content:"";height:0px;display:block;clear:both;visibility:hidden}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background:#000000 url("../images/icon_bg.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    color: #ffffff;
+    font-family: Cursive;
+}
+/*关于我*/
+#app{
+}
+.header{
+    width: 70%;
+    max-width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.header img{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+.header p{
+    width: 70%;
+    height: 110px;
+    float: right
+}
+.header p span{
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 110px;
+    line-height: 150px;
+}
+.header p span:first-child{
+    display: none;
+}
+.header p span a{
+    font-size: 20px;
+    transition:font-size 0.5s;
+}
+.header p span a:hover{
+    color: #C93B3A;
+    font-size: 22px;
+}
+.router-link-active{
+    color: #C93B3A;
+}
+/*内容*/
+.content{
+    margin-top: 20px;
+    width: 100%;
+}
+.content .home h1{
+    text-align: center;
+    width: 1000px;
+    line-height: 70px;
+    font-size: 42px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -70px;
+
+}
